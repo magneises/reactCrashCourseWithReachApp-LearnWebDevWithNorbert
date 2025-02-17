@@ -17,7 +17,8 @@ export default function Home() {
                     <p>with over 32 workout videos for you.</p>
                     <div className='card bg-purple d-flex flex-row justify-content-between p-3'>
                         <div className="text-end">
-                            <button className='btn btn-light btn-sm'>-</button>
+                            {/* <button className='btn btn-light btn-sm'>-</button> */}
+                            <Button />
                             <span style={{ margin: '.5rem' }}>min</span>
                             <button className='btn btn-light btn-sm'>+</button>
                         </div>
