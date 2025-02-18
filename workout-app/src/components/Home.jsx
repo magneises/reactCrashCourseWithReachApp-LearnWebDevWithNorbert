@@ -2,7 +2,7 @@
 import Title from "./Title"
 import yogaPose2 from "../images/yogaPose2.png"
 import Button from "./Button"
-
+import {BsFillPlayCircleFill} from "react-icons/bs"
 
 export default function Home() {
     return (
@@ -19,8 +19,6 @@ export default function Home() {
                     <p>with over 32 workout videos for you.</p>
                     <div className='card bg-purple d-flex flex-row justify-content-between p-3'>
                         <div className="text-end">
-                            {/* <button className='btn btn-light btn-sm'>-</button> */}
-
                             <Button classes={"light btn-sm"} text={"-"} />
                             <span style={{ margin: '.5rem' }}>min</span>
                             <Button classes={"light btn-sm"} text={"+"} />
@@ -29,9 +27,16 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='col '>
-                    <img src={yogaPose2} alt="yogaPose2" />
+                    <img src={yogaPose2} alt="yogaPose2" style={{ maxWidth: "420px"}} />
                 </div>
-                <a href='/'></a>
+                <a href='/'>
+                    <Button 
+                    classes={"purple rounded-pill my-4"} 
+                    text={"Get started"} 
+                    icon={<BsFillPlayCircleFill className="fs-1 me-1" />} 
+                    
+                    />
+                </a>
             </main>
         </>
     );
