@@ -3,6 +3,7 @@ import Title from "./Title"
 import yogaPose2 from "../images/yogaPose2.png"
 import Button from "./Button"
 
+
 export default function Home() {
     return (
         <>
