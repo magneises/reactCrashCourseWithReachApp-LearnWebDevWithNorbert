@@ -19,8 +19,10 @@ export default function Home() {
                     <div className='card bg-purple d-flex flex-row justify-content-between p-3'>
                         <div className="text-end">
                             {/* <button className='btn btn-light btn-sm'>-</button> */}
+
+                            <Button classes={"light btn-sm"} text={"-"} />
                             <span style={{ margin: '.5rem' }}>min</span>
-                            <button className='btn btn-light btn-sm'>+</button>
+                            <Button classes={"light btn-sm"} text={"+"} />
                         </div>
                         <h2>Workout Time</h2>
                     </div>

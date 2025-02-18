@@ -1,8 +1,12 @@
 
+import React from 'react'
 
-function Button() {
+function Button({ classes, text, icon}) {
     return (
-        <button className={`btn btn-${blasses}`}>-</button>
+        <button className={`btn btn-${classes}`}>
+            {icon}
+            {!text ? 'Button' : text}
+        </button> 
     )
 }
 
