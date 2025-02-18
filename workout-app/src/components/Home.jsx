@@ -1,6 +1,7 @@
 
 import Title from "./Title"
 import yogaPose2 from "../images/yogaPose2.png"
+import Button from "./Button"
 
 export default function Home() {
     return (
@@ -18,7 +19,6 @@ export default function Home() {
                     <div className='card bg-purple d-flex flex-row justify-content-between p-3'>
                         <div className="text-end">
                             {/* <button className='btn btn-light btn-sm'>-</button> */}
-                            <Button />
                             <span style={{ margin: '.5rem' }}>min</span>
                             <button className='btn btn-light btn-sm'>+</button>
                         </div>
