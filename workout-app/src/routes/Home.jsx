@@ -1,7 +1,7 @@
 
-import Title from "./Title"
+import Title from "../components/Title"
 import yogaPose2 from "../images/yogaPose2.png"
-import Button from "./Button"
+import Button from "../components/Button"
 import {BsFillPlayCircleFill} from "react-icons/bs"
 
 import { useState } from "react";
