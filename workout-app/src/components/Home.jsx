@@ -4,7 +4,11 @@ import yogaPose2 from "../images/yogaPose2.png"
 import Button from "./Button"
 import {BsFillPlayCircleFill} from "react-icons/bs"
 
+import { useState } from "react";
+
 export default function Home() {
+    const [workoutTime, setWorkoutTime] = useState(0);
+
     return (
         <>
             <Title text="Home" color="purple" />
@@ -19,9 +23,17 @@ export default function Home() {
                     <p>with over 32 workout videos for you.</p>
                     <div className='card bg-purple d-flex flex-row justify-content-between p-3'>
                         <div className="text-end">
-                            <Button classes={"light btn-sm"} text={"-"} />
-                            <span style={{ margin: '.5rem' }}>min</span>
-                            <Button classes={"light btn-sm"} text={"+"} />
+                            <Button 
+                                classes={"light btn-sm"} 
+                                text={"-"} 
+                                onClick={() => setWorkoutTime(workoutTime - 1)}
+                                />
+                            <span style={{ margin: '.5rem' }}>{workoutTime} min</span>
+                            <Button 
+                                classes={"light btn-sm"} 
+                                text={"+"} 
+                                onClick={() => setWorkoutTime(workoutTime + 1)}
+                                />
                         </div>
                         <h2>Workout Time</h2>
                     </div>
@@ -31,9 +43,9 @@ export default function Home() {
                 </div>
                 <a href='/'>
                     <Button 
-                    classes={"purple rounded-pill my-4"} 
-                    text={"Get started"} 
-                    icon={<BsFillPlayCircleFill className="fs-1 me-1" />} 
+                        classes={"purple rounded-pill my-4"} 
+                        text={"Get started"} 
+                        icon={<BsFillPlayCircleFill className="fs-1 me-1" />} 
                     
                     />
                 </a>

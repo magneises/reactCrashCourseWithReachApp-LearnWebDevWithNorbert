@@ -1,9 +1,9 @@
 
 import React from 'react'
 
-function Button({ classes, text, icon}) {
+function Button({ classes, text, icon, onClick }) {
     return (
-        <button className={`btn btn-${classes}`}>
+        <button className={`btn btn-${classes}`} onClick={onClick}>
 
             {icon}
             {!text ? 'Button' : text}
