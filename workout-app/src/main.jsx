@@ -18,7 +18,8 @@ createRoot(document.getElementById('root')).render(
             {" "}
             <Route 
               index 
-              element={<main className="card bg-orange m-3">Please Select a Day</main>} 
+              element={
+                <main className="card bg-orange-3">Please Select a Day</main>} 
             />
           <Route 
             path="*" 
